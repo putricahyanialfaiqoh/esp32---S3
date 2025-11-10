@@ -40,5 +40,9 @@ Setiap perubahan ditampilkan pada Serial Monitor secara realtime
 |  3 | Tekan tombol         | Nilai bertambah                      |
 |  4 | Buka Serial Monitor  | Terlihat output dari Core 0 & Core 1 |
 
+Hasil
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/18bbee4b-733d-42e9-a553-834aa3a227ba" />
+
+
 🎥 Video Demo
 Gdrive: https://drive.google.com/drive/folders/1xHsLUh8lWJG1qjUEWygBUBDPuTShIQ0_?usp=sharing
