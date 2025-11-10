@@ -30,5 +30,9 @@ Percobaan ini menunjukkan bagaimana ESP32-S3 menjalankan dua task secara paralel
 |  4 | Cek log Core 1      | Pesan “System Running Smoothly” tiap 3 detik             |
 |  5 | Validasi multicore  | Log menunjukkan **Core 0** & **Core 1** berjalan paralel |
 
+Hasil
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/578f1cf0-5a6a-427e-9921-d96414520983" />
+
+
 🎥 Video Demo
 Gdrive: https://drive.google.com/drive/folders/1-IQlojRIvyesS60SiTbj_doWpA2G7N0t?usp=sharing
