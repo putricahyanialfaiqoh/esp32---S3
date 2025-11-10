@@ -38,5 +38,7 @@ Task menampilkan teks secara bergantian (2s vs 3s interval)
 |  3 | Buka Serial Monitor      | Tampil log task & core berjalan            |
 |  4 | Amati interval tampilan  | Core0 → 2s, Core1 → 3s                     |
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/940ca0b0-56ec-49d4-b7bf-b219b80e9a24" />
+
 🎥 Video Demo
 Gdrive: https://drive.google.com/drive/folders/1jcI5MgsBtEnXx9m1d-IOBRYAX6cneeiD?usp=sharing 
