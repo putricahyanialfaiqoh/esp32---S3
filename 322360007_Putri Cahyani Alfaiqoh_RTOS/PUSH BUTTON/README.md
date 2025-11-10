@@ -22,5 +22,9 @@ Percobaan ini menunjukkan bagaimana ESP32-S3 menangani input dan output secara p
 |  3 | Amati LED                  | LED toggle ON/OFF setiap kali tombol ditekan |
 |  4 | Cek Serial Monitor         | Log dari **Core 0** & **Core 1** muncul      |
 
+Hasil
+<img width="1366" height="768" alt="Screenshot (248)" src="https://github.com/user-attachments/assets/47f78b86-9146-4cbf-9cb4-d376f5c45195" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3e502dee-333f-4eb1-8358-290e23314d34" />
+
 🎥 Video Demo
 Gdrive: https://drive.google.com/drive/folders/1l86TyPkNUZNA6bz5GUtfGsD7UbBDtODY?usp=sharing 
