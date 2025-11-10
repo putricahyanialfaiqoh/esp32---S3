@@ -33,5 +33,8 @@ Task berjalan parallel sehingga servo tampak bergerak maju-mundur tidak linear
 |  3 | Perhatikan gerak servo | Gerakan tidak smooth karena 2 core saling override |
 |  4 | Serial Monitor         | Log `Core 0` & `Core 1` bergantian                 |
 
+Hasil
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/37f5304d-af7f-4bb7-a0e6-b9cbc7fb04a5" />
+
 🎥 Video Demo
 Gdrive: https://drive.google.com/drive/folders/1xxA0_UCxWb_t9nFO6QF-OKTMf1O4tiRF?usp=sharing 
