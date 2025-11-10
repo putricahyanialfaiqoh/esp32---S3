@@ -68,5 +68,9 @@ Core 1 berjalan sebagai motor controller loop, memastikan stepper bergerak halus
 Core 0 menangani pembacaan tombol dan perubahan arah.
 Output posisi stepper dijaga agar tidak negatif (rentang 0–800).
 
+Hasil
+<img width="959" height="568" alt="image" src="https://github.com/user-attachments/assets/5d89036f-651a-4998-aca7-7dac57ea2d16" />
+
 🎥 Video Demo
 GDrive: https://drive.google.com/drive/folders/10E2MjZ-j4uZHOnst5GjtNRwvEUt9bqUG?usp=sharing 
+
