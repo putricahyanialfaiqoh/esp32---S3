@@ -1,5 +1,5 @@
-Nama: Fransisca Najwa Putri Wibowo
-NRP: 3223600003
+Nama: Putri Cahyani Alfaiqoh
+NRP: 3223600007
 Kelas: 3 D4 Teknik Komputer A
 
 Daftar Percobaan (Total 8 Program)
