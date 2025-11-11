@@ -1,40 +1,49 @@
-Dual-Core Servo Control
+Dual Core Rotary Encoder
 
-📌 Deskripsi
-Percobaan ini menunjukkan bagaimana ESP32-S3 menjalankan dua task servo secara paralel pada dua core berbeda menggunakan FreeRTOS.
-| Core   | Task         | Fungsi                                              |
-| ------ | ------------ | --------------------------------------------------- |
-| Core 0 | TaskServoCW  | Memutar servo searah jarum jam (0° → 180°)          |
-| Core 1 | TaskServoCCW | Memutar servo berlawanan arah jarum jam (180° → 0°) |
+📌 Deskripsi  
+Percobaan ini menggunakan ESP32-S3 dual-core untuk membaca rotary encoder dan push button secara paralel menggunakan FreeRTOS.
+| Core   | Task        | Fungsi                            |
+| ------ | ----------- | --------------------------------- |
+| Core 0 | TaskEncoder | Membaca rotary encoder (CLK & DT) |
+| Core 1 | TaskButton  | Membaca tombol push (SW encoder)  |
 
 🛠️ Hardware Setup
-| Core   | Task         | Fungsi                                              |
-| ------ | ------------ | --------------------------------------------------- |
-| Core 0 | TaskServoCW  | Memutar servo searah jarum jam (0° → 180°)          |
-| Core 1 | TaskServoCCW | Memutar servo berlawanan arah jarum jam (180° → 0°) |
+| Komponen           | Pin ESP32-S3 | Mode          |
+| ------------------ | ------------ | ------------- |
+| Rotary Encoder CLK | GPIO 2       | Input Pull-Up |
+| Rotary Encoder DT  | GPIO 14      | Input Pull-Up |
+| Rotary Encoder SW  | GPIO 4       | Input Pull-Up |
+| Power              | 3.3V & GND   | —             |
 
-📎 Koneksi Servo
-| Servo Kabel | Warna        | ESP32-S3 |
-| ----------- | ------------ | -------- |
-| Sinyal      | Kuning/Putih | GPIO 15  |
-| VCC         | Merah        | 5V       |
-| GND         | Hitam/Coklat | GND      |
+📎 Koneksi Encoder
+| Encoder Pin | Fungsi      | ESP32-S3 Pin |
+| ----------- | ----------- | ------------ |
+| CLK         | Channel A   | GPIO 2       |
+| DT          | Channel B   | GPIO 14      |
+| SW          | Push Button | GPIO 4       |
+| +           | VCC         | 3.3V         |
+| GND         | Ground      | GND          |
 
-🧠 Cara Kerja Sistem
-Core 0 mengirim perintah posisi servo naik bertahap
-Core 1 mengirim perintah posisi servo turun bertahap
-Task berjalan parallel sehingga servo tampak bergerak maju-mundur tidak linear
+🧠 Cara Kerja Sistem  
+Core 0 membaca sinyal rotary encoder menggunakan metode full quadrature:  
+- Putar CW → nilai meningkat  
+- Putar CCW → nilai menurun  
+Core 1 memonitor tombol push (SW encoder): Tekan tombol → menampilkan nilai encoder di Serial Monitor   
+Setiap perubahan ditampilkan di Serial Monitor secara realtime.  
 
-▶️ Langkah Percobaan
-| No | Langkah                | Hasil Diharapkan                                   |
-| -: | ---------------------- | -------------------------------------------------- |
-|  1 | Upload program         | Pesan task muncul di Serial Monitor                |
-|  2 | Servo bergerak         | Gerak maju-mundur                                  |
-|  3 | Perhatikan gerak servo | Gerakan tidak smooth karena 2 core saling override |
-|  4 | Serial Monitor         | Log `Core 0` & `Core 1` bergantian                 |
-
-Hasil
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/37f5304d-af7f-4bb7-a0e6-b9cbc7fb04a5" />
+▶️ Langkah Percobaan  
+| No | Langkah              | Hasil yang Diharapkan             |
+| -: | -------------------- | --------------------------------- |
+|  1 | Upload program       | Serial tampilkan pesan task start |
+|  2 | Putar encoder CW/CCW | Nilai bertambah / berkurang       |
+|  3 | Tekan tombol         | Nilai ditampilkan oleh Core 0 & 1 |
+|  4 | Buka Serial Monitor  | Terlihat output dari kedua core   |
 
 🎥 Video Demo
-Gdrive: https://drive.google.com/drive/folders/1xxA0_UCxWb_t9nFO6QF-OKTMf1O4tiRF?usp=sharing 
+![Demo ROTARYENCODER](Encode_1.gif)
+
+Core 0  
+![alt text](image-1.png)  
+
+Core 1  
+![alt text](image.png)  
