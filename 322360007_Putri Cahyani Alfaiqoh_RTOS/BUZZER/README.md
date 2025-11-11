@@ -1,6 +1,6 @@
 Dual Core Buzzer
 
-📌 Deskripsi
+📌 Deskripsi  
 Percobaan ini mendemonstrasikan penggunaan dua core ESP32-S3 untuk menghasilkan pola bunyi buzzer berbeda secara paralel:
 | Core   | Tugas         | Frekuensi | Pola Bunyi         |
 | ------ | ------------- | --------: | ------------------ |
@@ -23,8 +23,11 @@ Percobaan ini mendemonstrasikan penggunaan dua core ESP32-S3 untuk menghasilkan 
 |  4 | Perhatikan log untuk Core 1 | Output 1200 Hz setiap 0.2 detik                  |
 |  5 | Validasi multicore          | Log menunjukkan task berjalan di Core 0 & Core 1 |
 
-Hasil
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a01b92a9-687e-47ff-8d29-d9ad954ba267" />
-
 🎥 Video Demo
-Gdrive: https://drive.google.com/drive/folders/1K_wdP9ttsc-NksF2BDL43nwUQEU0aomJ?usp=sharing
+![Demo BUZZER](BUZZER.gif)
+
+Core 1
+![alt text](image.png)
+
+Core 0
+![alt text](image-1.png)
