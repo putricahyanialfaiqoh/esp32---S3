@@ -26,8 +26,5 @@ Percobaan ini mendemonstrasikan penggunaan dua core ESP32-S3 untuk menghasilkan 
 🎥 Video Demo
 ![Demo BUZZER](BUZZER.gif)
 
-Core 1
-![alt text](image.png)
+<img width="889" height="555" alt="image" src="https://github.com/user-attachments/assets/7e1ce6b1-5fda-4129-a70f-1b8118977b99" />
 
-Core 0
-![alt text](image-1.png)
