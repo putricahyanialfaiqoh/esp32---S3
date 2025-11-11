@@ -1,5 +1,6 @@
 Dual Core 3 LED
-📘 Deskripsi
+
+📘 Deskripsi  
 Percobaan ini menunjukkan penggunaan dua core ESP32-S3 untuk menjalankan task secara paralel menggunakan FreeRTOS.
 
 Program ini memiliki 2 task:
@@ -23,8 +24,11 @@ Program ini memiliki 2 task:
 |  3 | Amati LED1 & LED3 (GPIO 4 & 6) | LED1 & LED3 bergantian setiap ±500 ms — Core 1                           |
 |  4 | Buka Serial Monitor            | Terdapat log `[Core 0]` dan `[Core 1]` menunjukkan task berjalan paralel |
 
-Hasil 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/081d6e66-a8b6-420e-a983-62cd8a82da79" />
-
 🎥 Video Demo
-Gdrive: https://drive.google.com/drive/folders/1zJugp3nYugUQ3zeaDMXNZDKSGXHxg3_M?usp=sharing
+![Demo LED](LED.gif)
+
+Core 1
+![alt text](image.png)  
+
+Core 0
+![alt text](image-1.png)  
